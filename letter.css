@@ -1,0 +1,100 @@
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #db95e4;
+
+}
+
+img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  position: relative;
+  top: 5%; /* Adjusted for responsiveness */
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+@keyframes up {
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.letter h1 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.shadow {
+  position: absolute;
+  width: 20%; /* Adjusted for responsiveness */
+  height: 2%; /* Adjusted for responsiveness */
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.03);
+  top: 8%; /* Adjusted for responsiveness */
+  left: -2%; /* Adjusted for responsiveness */
+  z-index: -1;
+  animation: scale 3s linear infinite;
+}
+
+@keyframes scale {
+  0%, 100%{
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.85);
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  img {
+    top: 10%; /* Adjusted for responsiveness */
+  }
+
+  .shadow {
+    top: 12%; /* Adjusted for responsiveness */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    top: 15%; /* Adjusted for responsiveness */
+  }
+
+  .shadow {
+    top: 18%; /* Adjusted for responsiveness */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  img {
+    top: 20%; /* Adjusted for responsiveness */
+  }
+
+  .shadow {
+    top: 25%; /* Adjusted for responsiveness */
+  }
+}
+
+#returnButton {
+  background-color: #8d539d;
+  color: #151414;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 20px auto; /* Center the button horizontally and add space above and below */
+  margin-bottom: 20px;
+}
+
+/* Hover effect */
+#returnButton:hover {
+  background-color: #8610b1;
+}
